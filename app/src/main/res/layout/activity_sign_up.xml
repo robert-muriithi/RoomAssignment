@@ -45,7 +45,7 @@
         app:startIconTint="?attr/colorControlNormal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameEditText"
+            android:id="@+id/userName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
@@ -78,7 +78,7 @@
         app:startIconTint="?attr/colorControlNormal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/signUpEmailEditText"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -114,7 +114,7 @@
         app:startIconTint="?attr/colorControlNormal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/signUpPasswordEditText"
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -122,40 +122,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confirmPasswordInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:hint="@string/confirm_password"
-        android:textColorHint="?android:attr/textColorPrimary"
-        app:boxCornerRadiusBottomEnd="5dp"
-        app:boxCornerRadiusBottomStart="5dp"
-        app:boxCornerRadiusTopEnd="5dp"
-        app:boxCornerRadiusTopStart="5dp"
-        app:boxStrokeColor="?attr/colorControlNormal"
-        app:boxStrokeWidthFocused="3dp"
-        app:endIconMode="password_toggle"
-        app:endIconTint="?attr/colorControlNormal"
-        app:hintTextColor="?android:attr/textColorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout"
-        app:startIconDrawable="@drawable/ic_lock"
-        app:startIconTint="?attr/colorControlNormal">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/confirmPasswordEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:textColor="?android:attr/textColorPrimary" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/signUpBtn"
@@ -173,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/loginTextView"

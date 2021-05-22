@@ -8,8 +8,10 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "users")
 public class UserEntity {
 
-    @PrimaryKey(autoGenerate = true)
-    Integer id;
+
+
+    @PrimaryKey (autoGenerate = true)
+    int id;
 
     @ColumnInfo(name = "userName")
     String userName;
@@ -17,17 +19,13 @@ public class UserEntity {
     @ColumnInfo(name = "password")
     String password;
 
-    @ColumnInfo(name =  "confirm password")
-    String confPassword;
-
     @ColumnInfo(name = "email")
     String userEmail;
-
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -35,16 +33,8 @@ public class UserEntity {
         return userName;
     }
 
-    public String getConfPassword() {
-        return confPassword;
-    }
-
-    public void setConfPassword(String confPassword) {
-        this.confPassword = confPassword;
-    }
-
-    public void setUserName(String userId) {
-        this.userName = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -62,4 +52,5 @@ public class UserEntity {
     public void setUserEmail(String userEmail) {
         this.userEmail = userEmail;
     }
+
 }

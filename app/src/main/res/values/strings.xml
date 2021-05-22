@@ -11,4 +11,5 @@
     <string name="sign_in">Sign in</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="already_having_an_account_login">Already having an account? Login</string>
+    <string name="succesfully_created_account">create</string>
 </resources>

@@ -45,7 +45,7 @@
         >
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loginEmailEditText"
+            android:id="@+id/userEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -80,7 +80,7 @@
         app:startIconTint="?attr/colorControlNormal">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/loginPasswordEditText"
+            android:id="@+id/userPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
