@@ -23,6 +23,8 @@ public class SigningUpActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        getSupportActionBar().hide();
+
         userName = findViewById(R.id.userName);
         userEmail = findViewById(R.id.email);
         userPassword = findViewById(R.id.password);
@@ -47,7 +49,7 @@ public class SigningUpActivity extends AppCompatActivity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Registered Successfully\n Proceed to Login", Toast.LENGTH_SHORT).show();
                                 }
                             });
 

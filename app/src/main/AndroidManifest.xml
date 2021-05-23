@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginAndSignUpAssignment">
-        <activity android:name=".contacts.ContactCategoryActivity"></activity>
-        <activity android:name=".ListViewActivity" />
+        <activity android:name=".AddContactsActivity"></activity>
+        <activity android:name=".ContactsCategoryActivity" />
+        <activity android:name=".ContactsListActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SigningUpActivity">
             <intent-filter>

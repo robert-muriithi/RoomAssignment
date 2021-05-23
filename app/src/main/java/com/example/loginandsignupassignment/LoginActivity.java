@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.loginandsignupassignment.contacts.ContactCategoryActivity;
-import com.example.loginandsignupassignment.databinding.ActivitySignUpBinding;
 
 public class LoginActivity extends AppCompatActivity {
 EditText userEmail, userPassword;
@@ -52,7 +50,7 @@ Button loginButton;
                                 });
                             }else {
                                 String name = userEntity.userName;
-                               startActivity(new Intent(LoginActivity.this, ContactCategoryActivity.class));
+                               startActivity(new Intent(LoginActivity.this, ContactsCategoryActivity.class));
                             }
                         }
                     }).start();
